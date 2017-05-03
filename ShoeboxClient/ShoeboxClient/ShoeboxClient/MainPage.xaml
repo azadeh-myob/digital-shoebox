@@ -4,8 +4,34 @@
              xmlns:local="clr-namespace:ShoeboxClient"
              x:Class="ShoeboxClient.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListView ItemsSource="{Binding .}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"/>
+        <Button Grid.Row="1" Text="Add" Command="{Binding AddCommand}" />
+        <Grid Grid.Row="2" BindingContext="{Binding SelectedItem}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Orientation="Vertical">
+                <Label Text="User Id"/>
+                <Label Text="{Binding UserId}"/>
+                <Label Text="Id"/>
+                <Label Text="{Binding Id}"/>
+                <Label Text="Captured"/>
+                <Label Text="{Binding Captured}"/>
+                <Label Text="Document Type" />
+                <Picker SelectedIndex="{Binding DocumentType}" ItemsSource="{Binding DocumentTypes}" />
+                <Label Text="Upload Status" />
+                <Picker SelectedIndex="{Binding UploadStatus}" ItemsSource="{Binding UploadStatuses}" />
+            </StackLayout>
+            <Image Grid.Column="1" Source="{Binding Image}" />
+        </Grid>
+    </Grid>
 
 </ContentPage>

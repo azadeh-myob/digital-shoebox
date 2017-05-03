@@ -13,7 +13,6 @@ namespace ShoeboxClient.ViewModels
     public class CaptureViewModel : ViewModelBase
     {
 
-        const string UPLOADURL = "https://digitalshoebox.azurewebsites.net/api/storeImage?code=cx/5SHXMvFlRnX0X/pgGE37Il/1waX16STK1e3iaJ2eOpceQcJCkQQ==";
         private Capture capture;
 
         public CaptureViewModel(Capture _capture) : base()
@@ -43,7 +42,7 @@ namespace ShoeboxClient.ViewModels
             {
                 Id = Guid.NewGuid(),
                 Captured = DateTime.UtcNow,
-                UserId =  new Guid("AC5F84E2-C879-4399-A90B-B2BF2D5B4BDC"),
+                UserId =  Settings.UserId,
                 DocType = DocType.Unknown,
                 UploadStatus = UploadStatus.NotStarted
             };
@@ -104,11 +103,20 @@ namespace ShoeboxClient.ViewModels
             SaveData();
 
             var client = new HttpClient();
-            var result = await client.PostAsync(UPLOADURL, new StringContent(JsonConvert.SerializeObject(capture), new UTF8Encoding(), "application/json"));
+            var result = await client.PostAsync(Settings.UploadUrl, new StringContent(JsonConvert.SerializeObject(capture), new UTF8Encoding(), "application/json"));
             UploadStatus = result.IsSuccessStatusCode ? UploadStatus.Completed : UploadStatus.Interrupted;
 
             SaveData();
 
+        }
+
+        public IEnumerable<string> DocumentTypes
+        {
+            get { return (IEnumerable<string>)Enum.GetValues(typeof(DocType)); }
+        }
+        public IEnumerable<string> UploadStatuses
+        {
+            get { return (IEnumerable<string>)Enum.GetValues(typeof(UploadStatus)); }
         }
     }
 }
