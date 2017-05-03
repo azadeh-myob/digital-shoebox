@@ -1,10 +1,12 @@
 var request = require('request');
+var _ = require("lodash");
 
 module.exports = function(context, req) {
+    
     context.log('Node.js HTTP trigger function processed a request. RequestUri=%s', req.originalUrl);
-
+    
     // Make a call out to Cognitive Services
-        
+
         request.post({
             url: "https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/ocr",
             headers: {
@@ -13,10 +15,9 @@ module.exports = function(context, req) {
             },
             json: true,
             body: {
-              "url": 'https://help.clover.com/wp-content/uploads/online-receipt-location.jpg'
+              "url": req.RequestUri
             }
         }, function(err, res, body) {
-          
             // Check to see if we succeeded.
             if(err || res.statusCode != 200) {
                 context.log(err);
@@ -28,13 +29,19 @@ module.exports = function(context, req) {
                 return
             }
             
+            let textFromImage = stripOutJSON(body);
+
             context.res = {
-                // status: 200, /* Defaults to 200 */
+                // status: 200, 
                 // Send back the score we got from the Cog API
                 body
             };
             context.done();
         });
-  
+
+        function stripOutJson(blob) {
+            let sections = [];
+
+        }
     
 };

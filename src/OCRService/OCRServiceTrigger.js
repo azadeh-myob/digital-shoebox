@@ -1,58 +1,84 @@
-// var http = require('http');
+var request = require('request');
+var azure = require('azure-storage');
 
-function recogniseTextInImage() {
-    let body = {
-            "url": 'https://help.clover.com/wp-content/uploads/online-receipt-location.jpg'
-        };
+module.exports = function (context, myQueueItem) {
+    context.log('JavaScript queue trigger function processed work item', myQueueItem);
+    //construct url
+    let url = myQueueItem.url;
+    let uid = myQueueItem.uid;
+    //  context.log(uid);
 
-    // An object of options to indicate where to post to
-    var post_options = {
-        host: 'southeastasia.api.cognitive.microsoft.com',
-        path: '/vision/v1.0/ocr',
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Ocp-Apim-Subscription-Key': '93eebc96afd14ffba408c8f57af04c91'
-        },
-        json: true,
-        body: JSON.stringify(body)
-    };
-
-    // Set up the request
-    var post_req = http.request(post_options, function(error, response, body) {
-        // console.log(`STATUS: ${res.statusCode}`);
-        // console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
-
-        // post_req.on('error', (e) => {
-        //     console.log('error', e);
-        // })
-        // res.on('data', function (chunk) {
-        //     console.log('Response: ' + chunk);
-        // });
-        // res.on('end', () => {
-        //     console.log('No more data in response.');
-        //     post_req.end();
-        // });
-        console.log(error, response, body);
-        res.on('data', function (chunk) {
-            console.log(error, response, body);
-        });
-        res.on('error', function (chunk) {
-            console.log(error, response, body);
-        });
-        if (!error) {
-            //res.write(response.statusCode);
-        } else {
-            //response.end(error);
-            //res.write(error);
-        }
-        res.end(response);
-    });
-
-    // post the data
+    //myQueueItem
     
-    post_req.write(JSON.stringify(body));
+    // Make a call out to Cognitive Services
+    function OCR () {
+            request.post({
+                url: "https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/ocr",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Ocp-Apim-Subscription-Key": '93eebc96afd14ffba408c8f57af04c91'
+                },
+                json: true,
+                body: {
+                "url": url
+                }
+            }, function(err, res, body) {
+             
+                // Check to see if we succeeded.
+                if(err || res.statusCode != 200) {
+                   context.log(err);
+                    context.res = {
+                        status: 500,
+                        body: err
+                    }
+                    context.done();
+                    return
+                }
 
+                updateTable(uid,body);
+
+                
+                
+
+                
+            });
+        }
+        function updateTable(uid,ocr) {
+
+            var retryOperations = new azure.ExponentialRetryPolicyFilter();
+            var tableSvc = azure.createTableService().withFilter(retryOperations);
+            var query = new azure.TableQuery()
+                .top(1)
+                .where('PartitionKey eq ?', uid);
+
+            // context.log(query);
+            tableSvc.queryEntities('dshoebox',query, null, function(error, result, response) {
+
+                if(!error) {
+                    // query was successful
+                    updatedTask=result.entries[0];
+
+                    updatedTask.ocrBlob= {'_':ocr};
+                    // context.log(result.entries[0]);
+                    tableSvc.mergeEntity('dshoebox', updatedTask, function(error, result, response){
+                        console.log(error);
+                        if(!error) {
+                            // Entity updated
+                            context.log('success!');
+                            return 'success!';
+                        } else {
+                            context.log(':((');
+                        }
+                        context.done();
+
+                    });
+                } else {
+                    context.log(':(');
+                    context.done();
+                }
+            });
+
+        }
+
+       OCR();
 };
-
-recogniseTextInImage();
