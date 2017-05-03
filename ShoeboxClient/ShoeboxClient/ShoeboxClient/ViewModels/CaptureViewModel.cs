@@ -13,7 +13,7 @@ namespace ShoeboxClient.ViewModels
     public class CaptureViewModel : ViewModelBase
     {
 
-        const string UPLOADURL = "https://digitalshoebox.azurewebsites.net/api/storeImage?code=cx/5SHXMvFlRnX0X/pgGE37Il/1waX16STK1e3iaJ2eOpceQcJCkQQ=="
+        const string UPLOADURL = "https://digitalshoebox.azurewebsites.net/api/storeImage?code=cx/5SHXMvFlRnX0X/pgGE37Il/1waX16STK1e3iaJ2eOpceQcJCkQQ==";
         private Capture capture;
 
         public CaptureViewModel(Capture _capture) : base()
@@ -28,7 +28,7 @@ namespace ShoeboxClient.ViewModels
 
         private async Task LoadData(Guid id)
         {
-            capture = await databaseService.GetItemAsync(id);
+            capture = await App.Database.GetItemAsync(id);
             NotifyAllPropertiesChanged();
         }
 
@@ -41,9 +41,9 @@ namespace ShoeboxClient.ViewModels
         {
             capture = new Capture()
             {
-                Id = new Guid(),
+                Id = Guid.NewGuid(),
                 Captured = DateTime.UtcNow,
-                UserId = this.UserId,
+                UserId =  new Guid("AC5F84E2-C879-4399-A90B-B2BF2D5B4BDC"),
                 DocType = DocType.Unknown,
                 UploadStatus = UploadStatus.NotStarted
             };
@@ -89,7 +89,7 @@ namespace ShoeboxClient.ViewModels
         {
             ClearStatus();
             base.SaveData();
-            var success = await databaseService.SaveItemAsync(capture);
+            var success = await App.Database.SaveItemAsync(capture);
             SetStatus(success == 0 ? "Saved" : "Error Saving");
         }
 
