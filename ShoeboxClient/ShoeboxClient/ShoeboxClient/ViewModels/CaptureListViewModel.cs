@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace ShoeboxClient.ViewModels
 {
@@ -19,15 +20,32 @@ namespace ShoeboxClient.ViewModels
             }
         }
 
-        public void AddNew()
+        private CaptureViewModel selectedItem;
+
+        public CaptureViewModel SelectedItem
         {
-            Captures.Add(new CaptureViewModel());
+            get { return selectedItem; }
+            set { selectedItem = value; NotifyPropertyChanged(); }
+        }
+
+        public ICommand AddCommand { get; private set; }
+
+        public CaptureListViewModel()
+        {
+            AddCommand = new DelegateCommand(AddNew);
+        }
+
+        private void AddNew()
+        {
+            var newCap = new CaptureViewModel();
+            Captures.Add(newCap);
+            SelectedItem = newCap;
         }
 
         public override async void LoadData()
         {
             base.LoadData();
-            foreach (var item in await databaseService.GetItemsAsync())
+            foreach (var item in await App.Database.GetItemsAsync())
             {
                 Captures.Add(new CaptureViewModel(item));
             }
