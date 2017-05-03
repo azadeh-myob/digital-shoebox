@@ -1,5 +1,5 @@
 const express = require('express');
-const imageStoreController = require('./imageStoreController');
+const imageStoreController = require('./imageService/imageStoreController');
 const bodyParser = require('body-parser');
 
 var app = express();
