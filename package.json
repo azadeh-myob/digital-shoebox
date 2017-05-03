@@ -1,0 +1,30 @@
+{
+  "name": "digital-shoebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azadeh-myob/digital-shoebox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azadeh-myob/digital-shoebox/issues"
+  },
+  "homepage": "https://github.com/azadeh-myob/digital-shoebox#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "0.6.22 || 6.9.x"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
