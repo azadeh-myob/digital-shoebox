@@ -1,33 +1,56 @@
 <html lang="en" ng-app="StarterApp">
   <head>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body layout="row" ng-controller="AppCtrl">
+    
     <div layout="column" class="relative" layout-fill role="main">
       <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
         <ng-md-icon icon="add"></ng-md-icon>
       </md-button>
-      <md-toolbar>
+      <md-toolbar ng-show="!showSearch">
         <div class="md-toolbar-tools">
           <md-button ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
             <ng-md-icon icon="menu"></ng-md-icon>
           </md-button>
           <h3>
-            Digital Shoebox Report
+            Digital Shoebox
           </h3>
+          <span flex></span>
+          <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <ng-md-icon icon="search"></ng-md-icon>
+          </md-button>
+          <md-button aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
+          </md-button>
         </div>
-      </md-toolbar>
-      <md-toolbar class="md-hue-1">
-        <div class="md-toolbar-tools">
-          <h3 flex="10">
+        <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
+          <md-tab id="tab1" aria-controls="tab1-content">
+            Upload
+          </md-tab>
+          <md-tab id="tab2" aria-controls="tab2-content">
             Search
+          </md-tab>
+        </md-tabs>
+      </md-toolbar>
+      <md-toolbar class="md-hue-1" ng-show="showSearch">
+        <div class="md-toolbar-tools">
+          <md-button ng-click="showSearch = !showSearch" aria-label="Back">
+            <ng-md-icon icon="arrow_back"></ng-md-icon>
+          </md-button>
+          <h3 flex="10">
+            Back
           </h3>
           <md-input-container md-theme="input" flex>
             <label>&nbsp;</label>
-            <input ng-model="search.word" placeholder="enter search" ng-blur="searchForWord()" ng-enter="searchForWord()">
+            <input ng-model="search.who" placeholder="enter search">
           </md-input-container>
-          <md-button aria-label="Search">
-            <ng-md-icon icon="search" ng-click="searchForWord()"></ng-md-icon>
+          <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <ng-md-icon icon="search"></ng-md-icon>
+          </md-button>
+          <md-button aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+            <ng-md-icon icon="more_vert"></ng-md-icon>
           </md-button>
         </div>
        
@@ -35,9 +58,11 @@
       <md-content flex md-scroll-y>
         <ui-view layout="column" layout-fill layout-padding>
           <div class="inset" hide-sm></div>
+            <ng-switch on="data.selectedIndex" class="tabpanel-container">
               <div role="tabpanel"
                    id="tab1-content"
                    aria-labelledby="tab1"
+                   ng-switch-when="0"
                    md-swipe-left="next()"
                    md-swipe-right="previous()"
                    layout="row" layout-align="center center">
@@ -47,8 +72,9 @@
                         <md-item>
                           <md-item-content>
                             <div class="md-tile-content">
-                              <h3 ng-if="!result.url">{{ result}}</h3>
-                              <img ng-if="result.url" ng-src="{{result.url}}" style="max-width:100%" />
+                                <h2>Upload an document</h2>
+                              <input type="file" ng-model="editItem._attachments_uri.image" accept="image/*" app-filereader ng-change="uploadFile" />
+                              <p ng-if="uploaded">Your document has been uploaded!</p>
                             </div>
                           </md-item-content>
                         </md-item>
@@ -56,7 +82,53 @@
                     </md-card-content>
                   </md-card>
               </div>
-             
+              <div role="tabpanel"
+                   id="tab2-content"
+                   aria-labelledby="tab2"
+                   ng-switch-when="1"
+                   md-swipe-left="next()"
+                   md-swipe-right="previous()" 
+                   layout="row" layout-align="center center" layout-wrap>
+                  <md-card flex-gt-sm="90" flex-gt-md="80" >
+                    <md-card-content>
+                      <md-list>
+                        <md-item>
+                          <md-item-content>
+                            <div class="md-tile-content">
+                                 <h3 flex="10">
+                                    Search
+                                </h3>
+                                <md-input-container md-theme="input" flex>
+                                    <label>&nbsp;</label>
+                                    <input ng-model="word" placeholder="enter search">
+                                </md-input-container>
+                                <md-button aria-label="Search">
+                                    <ng-md-icon icon="search" ng-click="searchForWord(word)"></ng-md-icon>
+                                </md-button>
+                            </div>
+                          </md-item-content>
+                        </md-item>
+                      </md-list>
+                    </md-card-content>
+                  </md-card>
+                  <md-card flex-gt-sm="90" flex-gt-md="80" >
+                    <md-card-content>
+                      <md-list>
+                        <md-item>
+                          <md-item-content>
+                            <div class="md-tile-content">
+                              <h3 ng-if="!result.PartitionKey">{{ result}}</h3>
+
+                              <img ng-if="result.PartitionKey" ng-src="https://digitalshoebox.blob.core.windows.net/dshoebox/{{result.PartitionKey}}/{{result.RowKey}}.jpg" style="max-width:100%" />
+                            </div>
+                          </md-item-content>
+                        </md-item>
+                      </md-list>
+                    </md-card-content>
+                  </md-card>
+              </div>
+              
+          </ng-switch>
           
         </ui-view>
       </md-content>
@@ -69,6 +141,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
     
     <script src="http://cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
-    <script src="app.js"></script>
+    <script src="app.js"></script> 
   </body>
 </html>

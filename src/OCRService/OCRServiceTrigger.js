@@ -1,5 +1,6 @@
 var request = require('request');
 var azure = require('azure-storage');
+var _ = require('lodash');
 
 module.exports = function (context, myQueueItem) {
     context.log('JavaScript queue trigger function processed work item', myQueueItem);
@@ -36,12 +37,22 @@ module.exports = function (context, myQueueItem) {
                 }
 
                 updateTable(uid,body);
-
-                
-                
-
-                
             });
+        }
+
+        function getJustTheWords(blob) {
+            let text = '';
+            let sections = blob.regions;
+            _.forEach(sections, (section) => {
+                _.forEach(section.lines, (line) => {
+                    _.forEach(line.words, (word) => {
+                        console.log(word.text);
+                        text += ' '+ word.text;
+                    })
+                    text += '.';
+                })
+            })
+            context.log(text);
         }
         function updateTable(uid,ocr) {
 
@@ -58,18 +69,19 @@ module.exports = function (context, myQueueItem) {
                     // query was successful
                     updatedTask=result.entries[0];
 
-                    updatedTask.ocrBlob= {'_':ocr};
+                    updatedTask.ocrBlob= {'_':JSON.stringify(ocr)};
                     // context.log(result.entries[0]);
                     tableSvc.mergeEntity('dshoebox', updatedTask, function(error, result, response){
-                        console.log(error);
+                        context.log('ERROR',error);
                         if(!error) {
                             // Entity updated
-                            context.log('success!');
-                            return 'success!';
+                            getJustTheWords(ocr);
+                            context.done();
                         } else {
                             context.log(':((');
+                            context.done();
                         }
-                        context.done();
+                        
 
                     });
                 } else {
@@ -80,5 +92,7 @@ module.exports = function (context, myQueueItem) {
 
         }
 
-       OCR();
+
+
+        OCR();      
 };

@@ -40,8 +40,15 @@ module.exports = function(context, req) {
         });
 
         function stripOutJson(blob) {
-            let sections = [];
+            let text = [];
+            let sections = blob.regions;
+            _.forEach(sections, (section) => {
+                _.forEach(section.lines, (line) => {
+                    _.forEach(line.words, (word)=>{
 
+                    })
+                })
+            })
         }
     
 };
