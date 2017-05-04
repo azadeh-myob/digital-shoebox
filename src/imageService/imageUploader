@@ -1,0 +1,127 @@
+#r "Microsoft.WindowsAzure.Storage"
+#r "System.Configuration"
+#r "System.Drawing"
+using System.Net;
+using System.Drawing;
+using Microsoft.Azure; // Namespace for CloudConfigurationManager
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage.Table;
+using Microsoft.WindowsAzure.Storage.Queue; // Namespace for Queue storage types
+using System;
+using System.Text;
+using Newtonsoft.Json;
+
+public static CloudQueueMessage Serialize(Object o)
+{
+    return new CloudQueueMessage(JsonConvert.SerializeObject(o));
+}
+
+public class ShoeboxEntity : TableEntity
+{
+    public ShoeboxEntity(string userid, string id, DateTime capturedDateTime, string docType, string uploadstatus)
+    {
+        this.PartitionKey = userid;
+        this.RowKey = id;
+        this.CapturedDateTime = capturedDateTime;
+        this.DocType = docType;
+        this.UploadStatus = uploadstatus;
+    }
+
+    public ShoeboxEntity() { }
+    public DateTime CapturedDateTime { get; set; }
+    public string DocType { get; set; }
+    public string UploadStatus { get; set; }
+}
+
+public class MessageEntity
+{
+    public MessageEntity(string userid, string id)
+    {
+        this.UserId = userid;
+        this.Id = id;
+    }
+    [JsonProperty("id", Required = Required.Always)]
+    public string Id { get; set; }
+    [JsonProperty("userId", Required = Required.Always)]
+    public string UserId { get; set; }
+}
+
+static string CloudAccountKey = "DefaultEndpointsProtocol=https;AccountName=digitalshoebox;AccountKey=XXXXXXXXX;EndpointSuffix=core.windows.net";
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
+{
+    // Get request body
+    dynamic data = await req.Content.ReadAsAsync<object>();
+    log.Info((string)data.Id);
+    // Set name to query string or body data
+    string image =  data?.Image;
+    string id =  data?.Id;
+    string userId =  data?.UserId;
+    var ShoeboxEntity = new ShoeboxEntity(userId, id, DateTime.Now, "1","2");
+    var MessageEntity = new MessageEntity(userId, id);
+
+    WriteToQueue(MessageEntity, log);
+    WriteToTable(ShoeboxEntity);
+    WriteToBlob(id, userId, image);
+
+    return req.CreateResponse(HttpStatusCode.OK);
+}
+
+static string WriteToBlob(string id, string userId, string base64String)
+{
+    string status = string.Empty;
+
+    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudAccountKey);
+    CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+    CloudBlobContainer blobContainer = blobClient.GetContainerReference("dshoebox");
+    blobContainer.CreateIfNotExists();
+
+    string blobName = $"{userId}/{id}.jpg";
+    CloudBlockBlob blob = blobContainer.GetBlockBlobReference(blobName);
+    blob.Properties.ContentType = "image/jpeg";
+
+    try
+    {
+        byte[] imageBytes = Convert.FromBase64String(base64String);
+        // Convert byte[] to Image
+        using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+        {
+            blob.UploadFromStream(ms);
+        }
+    }
+    catch (StorageException e)
+    {
+        return $"Error {e.Message}";
+    }
+    return "Success";
+}
+
+static void WriteToQueue(MessageEntity entity, TraceWriter log)
+{
+    // Retrieve storage account from connection string.
+    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudAccountKey);
+
+    // Create the queue client.
+    CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+
+    // Retrieve a reference to a container.
+    CloudQueue queue = queueClient.GetQueueReference("digitalshoeboxqueue");
+
+    // Create the queue if it doesn't already exist
+    queue.CreateIfNotExists();
+
+    // Create a message and add it to the queue.
+    queue.AddMessage(Serialize(entity));
+    queue.FetchAttributes();
+}
+
+static void WriteToTable(ShoeboxEntity entity)
+{
+    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudAccountKey);
+    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();     // Create the table client.
+    CloudTable table = tableClient.GetTableReference("dshoebox");
+
+    TableOperation updateOperation = TableOperation.InsertOrReplace(entity);
+    table.Execute(updateOperation);     // Execute the operation.
+}

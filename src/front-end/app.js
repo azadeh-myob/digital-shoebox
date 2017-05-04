@@ -93,22 +93,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
         $scope.loading = false;
         $scope.result = "Oh no, something went wrong";
     });
-  }
-
-    /*$http({
-        method: 'POST',
-        url: '/someUrl',
-        body: {
-            word: 'receipt'
-        }
-    }).then(function successCallback(response) {
-        // this callback will be called asynchronously
-        // when the response is available
-    }, function errorCallback(response) {
-        // called asynchronously if an error occurs
-        // or server returns response with an error status.
-    });
-    */
+  };
 
   $scope.showListBottomSheet = function($event) {
     $scope.alert = '';
@@ -159,7 +144,7 @@ function DialogController($scope, $mdDialog) {
   $scope.answer = function(answer) {
     $mdDialog.hide(answer);
   };
-};
+}
 
 app.directive('userAvatar', function() {
   return {

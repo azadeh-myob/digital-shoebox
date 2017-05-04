@@ -1,0 +1,31 @@
+//#r "Microsoft.Azure.Search"
+using System.Net;
+using Microsoft.Azure;
+using Microsoft.Azure.Search;
+using Microsoft.Azure.Search.Models;
+using Newtonsoft.Json.Linq;
+
+public static async Task<HttpResponseMessage> Run(HttpRequestMessage req,  TraceWriter log)
+{    
+    log.Info("C# HTTP trigger function processed a request.");
+
+     string name = req.GetQueryNameValuePairs()
+        .FirstOrDefault(q => string.Compare(q.Key, "search", true) == 0)
+        .Value;
+
+    string searchServiceName = "shoebox-search";
+    string adminApiKey = "XXXXXXX";
+
+    SearchIndexClient indexClient = new SearchIndexClient(searchServiceName, "temp", new SearchCredentials(adminApiKey));
+
+    var results = indexClient.Documents.Search<dynamic>(name);
+    if(results.Results.Count == 0 )
+    {
+        return req.CreateResponse(HttpStatusCode.NotFound);
+    }
+    else
+    {
+        Object res = results.Results[0].Document;
+        return req.CreateResponse(HttpStatusCode.OK, res.ToString());
+    }
+}

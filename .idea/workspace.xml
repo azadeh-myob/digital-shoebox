@@ -2,101 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb5b7f4e-92bf-4494-9290-df0ee6d564ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/drawable-hdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/drawable-xhdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/drawable-xxhdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/drawable/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/LockScreenLogo.scale-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/LockScreenLogo.scale-125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/LockScreenLogo.scale-150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/LockScreenLogo.scale-200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/LockScreenLogo.scale-400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/SplashScreen.scale-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/SplashScreen.scale-125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/SplashScreen.scale-150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/SplashScreen.scale-200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/SplashScreen.scale-400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square150x150Logo.scale-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square150x150Logo.scale-125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square150x150Logo.scale-150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square150x150Logo.scale-200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square150x150Logo.scale-400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.scale-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.scale-125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.scale-150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.scale-200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.scale-400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.targetsize-16_altform-unplated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.targetsize-24_altform-unplated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.targetsize-256_altform-unplated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.targetsize-32_altform-unplated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Square44x44Logo.targetsize-48_altform-unplated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/StoreLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Wide310x150Logo.scale-100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Wide310x150Logo.scale-125.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Wide310x150Logo.scale-150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Wide310x150Logo.scale-200.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Assets/Wide310x150Logo.scale-400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Default-568h@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Default-Portrait.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Default-Portrait@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Default@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-60@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-60@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-76@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small-40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small-40@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small-40@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/Icon-Small@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/iTunesArtwork" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/iTunesArtwork@2x" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Assets/AboutAssets.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/MainActivity.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Properties/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Properties/AssemblyInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/AboutResources.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/Resource.Designer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/layout/Tabbar.axml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/layout/Toolbar.axml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/Resources/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/ShoeboxClient.Android.csproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.Android/packages.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/App.xaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/App.xaml.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/MainPage.xaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/MainPage.xaml.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Package.appxmanifest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Properties/AssemblyInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/Properties/Default.rd.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/ShoeboxClient.UWP.csproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.UWP/project.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/AppDelegate.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Entitlements.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Main.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Properties/AssemblyInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/Resources/LaunchScreen.storyboard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/ShoeboxClient.iOS.csproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient.iOS/packages.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/App.xaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/App.xaml.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/MainPage.xaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/MainPage.xaml.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Properties/AssemblyInfo.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/ShoeboxClient.csproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/packages.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OCRService/triggerv2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/imageStoreController.js" afterPath="$PROJECT_DIR$/src/imageService/imageStoreController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/imageService/imageReaderFromQueue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/imageService/imageSearch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/imageService/imageStoreController.csx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/imageService/imageUploader" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/imageService/imageStoreController.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js" afterPath="$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OCRService/triggerv2.js" afterPath="$PROJECT_DIR$/src/OCRService/triggerv2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/front-end/app.js" afterPath="$PROJECT_DIR$/src/front-end/app.js" />
     </list>
     <ignored path="digital-shoebox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,46 +32,65 @@
     <favorites_list name="digital-shoebox" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="imageReaderFromQueue.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/imageService/imageReaderFromQueue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="630">
+              <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#51#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imageStoreController.csx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/imageService/imageStoreController.csx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="imageSearch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/imageService/imageSearch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imageStoreController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/imageService/imageStoreController.js">
+      <file leaf-file-name="imageUploader" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/imageService/imageUploader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="645">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="DocType.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Models/DocType.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadStatus.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Models/UploadStatus.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -175,8 +108,18 @@
       <file leaf-file-name="triggerv2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OCRService/triggerv2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/front-end/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -185,8 +128,8 @@
       <file leaf-file-name="OCRServiceTrigger.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="354">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -215,6 +158,14 @@
         <option value="$PROJECT_DIR$/src/imageStoreController.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/imageService/imageStoreController.js" />
+        <option value="$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js" />
+        <option value="$PROJECT_DIR$/src/front-end/app.js" />
+        <option value="$PROJECT_DIR$/src/OCRService/triggerv2.js" />
+        <option value="$PROJECT_DIR$/src/imageService/imageReaderFromQueue.js" />
+        <option value="$PROJECT_DIR$/src/imageService/imageSearch" />
+        <option value="$PROJECT_DIR$/src/imageService/imageStoreController.csx" />
+        <option value="$PROJECT_DIR$/src/imageService/imageUploader" />
       </list>
     </option>
   </component>
@@ -327,6 +278,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digital-shoebox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digital-shoebox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digital-shoebox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="digital-shoebox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeboxClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -412,6 +395,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="eb5b7f4e-92bf-4494-9290-df0ee6d564ab" name="Default" comment="" />
@@ -421,11 +407,13 @@
       <updated>1493772377307</updated>
       <workItem from="1493772378573" duration="352000" />
       <workItem from="1493772736864" duration="8864000" />
+      <workItem from="1493783607437" duration="7581000" />
+      <workItem from="1493847257370" duration="2593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9216000" />
+    <option name="totallyTimeSpent" value="19390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="846" extended-state="6" />
@@ -434,19 +422,19 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33403805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -465,18 +453,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.babelrc">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="883">
-          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -485,14 +473,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/npm-debug.log">
+    <entry file="file://$PROJECT_DIR$/src/imageService/imageStoreController.csx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -518,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OCRService/triggerv2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -526,17 +513,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/imageService/imageStoreController.js">
+    <entry file="file://$PROJECT_DIR$/.babelrc" />
+    <entry file="file://$PROJECT_DIR$/.eslintrc" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -544,6 +544,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/App.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Models/Capture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Models/DocType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShoeboxClient/ShoeboxClient/ShoeboxClient/Models/UploadStatus.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1577">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front-end/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OCRService/OCRServiceTrigger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OCRService/triggerv2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageService/imageReaderFromQueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="83" column="3" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageService/imageSearch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageService/imageStoreController.csx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageService/imageUploader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
